@@ -7,7 +7,10 @@ function App() {
       <nav>
         <ul className="">
           <li className="my-1 mx-4 sm:mx-24 w-20">
-            <img src="Images/Frame.png" alt="logo" />
+            <img
+              src={`${process.env.PUBLIC_URL}/Images/Frame.png`}
+              alt="logo"
+            />
           </li>
         </ul>
       </nav>
@@ -25,14 +28,18 @@ function App() {
           <div className="gap-4 h-28">
             <div className="flex items-center gap-8 mb-4">
               <label className="flex items-center bg-black text-white gap-2 h-11 w-56 py-2 px-5 rounded-md">
-                <img className="h-6" src="Images/Vector.png" alt="vector" />
+                <img
+                  className="h-6"
+                  src={`${process.env.PUBLIC_URL}/Images/Vector.png`}
+                  alt="vector"
+                />
                 VIA SUPPORT CHAT
                 <input type="button" />
               </label>
               <label className="flex sm:ml-auto items-center justify-center bg-black text-white gap-2 h-11 w-56 py-2 px-5 rounded-md">
                 <img
                   className="h-6"
-                  src="Images/ic_baseline-phone.png"
+                  src={`${process.env.PUBLIC_URL}/Images/ic_baseline-phone.png`}
                   alt="vector"
                 />
                 VIA CALL
@@ -42,7 +49,7 @@ function App() {
             <label className="flex items-center justify-center h-11 rounded-md border border-solid border-black gap-2 px-5 py-2">
               <img
                 className="h-6 gap-2"
-                src="Images/ic_outline-message.png"
+                src={`${process.env.PUBLIC_URL}/Images/ic_outline-message.png`}
                 alt="balaji"
               />
               VIA EMAIL FORM
@@ -101,7 +108,7 @@ function App() {
         </form>
         <div className="w-full sm:w-1/2">
           <img
-            src="Images/Service.png"
+            src={`${process.env.PUBLIC_URL}/Images/Service.png`}
             alt="services"
             className="w-full h-auto"
           />
